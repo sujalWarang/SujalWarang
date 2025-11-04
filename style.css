@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ffb400;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffb400;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #111, #222);
+  text-align: center;
+}
+.hero-content h2 {
+  font-size: 48px;
+}
+.hero-content span {
+  color: #ffb400;
+}
+.hero-content p {
+  margin: 10px 0 20px;
+}
+.btn {
+  background: #ffb400;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ffc94a;
+}
+
+/* About Section */
+section {
+  padding: 100px 50px;
+}
+.about p {
+  max-width: 700px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.contact button {
+  align-self: flex-start;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
